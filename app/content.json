@@ -1,0 +1,18 @@
+[
+  {
+    "username": "david",
+    "permissions": "admin"
+  },
+  {
+    "username": "meir",
+    "permissions": "manager"
+  },
+  {
+    "username": "roma",
+    "permissions": "super admin"
+  },
+  {
+    "username": "dima",
+    "permissions": "manager"
+  }
+]
