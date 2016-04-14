@@ -3,8 +3,9 @@ In your system should be installed: git, npm
 Do this steps for run app:
 
 1. git clone https://github.com/dsolyanik/test.git
-2. run 'npm start' under ../your/path/to/project/test
-3. go to http://localhost:8000/app/
+2. run 'npm install' under ../your/path/to/project/test
+3. run 'bower install' under ../your/path/to/project/test
+4. go to http://localhost:8000/app/
 
 
 Some comments:
