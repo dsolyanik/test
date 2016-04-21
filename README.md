@@ -14,6 +14,7 @@ Some comments:
  Arrays format is : [{username:”david”,permissions:”admin”},{username:”meir”,permissions:”manager”}
  User hasn't id, thus I make field name as readonly in edit user form.
 
+
    Initially all data grabed from content.json file.
    Then after add/edit this data saved not on external storage (All new data after restart would be lost)
 
