@@ -21,14 +21,4 @@ Some comments:
    html attribute style is a bad practise
 
 
-   _______________________________________________
-
-
-
-I will create localization as in this article. But not today. I am sorry.
-
-http://codingsmackdown.tv/blog/2012/12/14/localizing-your-angularjs-app/
-
-
-  <!--swap all text field as on this example when finished do localize service-->
-  <!--<h2 ng-bind="'title'  | i18n"></h2>-->
+For localization I used angular-translate

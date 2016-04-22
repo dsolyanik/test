@@ -3,6 +3,7 @@
 
     angular
         .module('myApp.users', [
-            'ngRoute'
+            'ngRoute',
+            'pascalprecht.translate'
         ]);
 })();

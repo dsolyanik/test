@@ -1,10 +1,24 @@
-<div style="font-size: large; margin-top: 5%; margin-left: 10%"><p>Manage users:</p></div>
+<div class="lang-buttons">
+    <input type="image" src="http://img.freeflagicons.com/thumb/round_icon/ukraine/ukraine_640.png" alt="Submit"
+           class="lang-btn" ng-click="changeLanguage('ru')">
+    <input type="image" src="http://img.freeflagicons.com/thumb/sphere_icon/israel/israel_640.png" alt="Submit"
+           style=" width: 70px; height: 60px;" ng-click="changeLanguage('il')">
+    <input type="image" src="http://img.freeflagicons.com/thumb/round_icon/england/england_640.png" alt="Submit"
+           class="lang-btn" ng-click="changeLanguage('en')">
+</div>
+
+
+<div style="font-size: large; margin-top: 5%; margin-left: 10%">
+    <p>
+        <span ng-bind="'manage_users' | translate"></span>
+    </p>
+</div>
 <table class="table table-striped" align="center" style="width: 80%;">
     <thead>
     <tr>
-        <th>Name</th>
-        <th>Permissions</th>
-        <th>Actions</th>
+        <th> <span ng-bind="'name' | translate"></span> </th>
+        <th> <span ng-bind="'permissions' | translate"></span> </th>
+        <th> <span ng-bind="'actions' | translate"></span> </th>
     </tr>
     </thead>
     <tbody ng-repeat="item in collection">
@@ -39,26 +53,26 @@
                 <h4 class="modal-title">Modal Header</h4>
             </div>
             <div class="modal-body">
-                <p>Create new user</p>
+                <p><span ng-bind="'create' | translate"></span> </p>
                 <label for="username">
-                    User name
+                    <span ng-bind="'name' | translate"></span>
                 </label>
                 <div>
-                    <input ng-if="!tempUser.edit" ng-model="tempUser.username" type="text" class="form-control" id="username" placeholder="Enter user name" name="username" required>
-                    <input ng-if="tempUser.edit" ng-model="tempUser.username" type="text" class="form-control"  placeholder="Enter user name" name="username" required readonly>
+                    <input ng-if="!tempUser.edit" ng-model="tempUser.username" type="text" class="form-control" id="username" placeholder="{{'enter_name' | translate}}" name="username" required>
+                    <input ng-if="tempUser.edit" ng-model="tempUser.username" type="text" class="form-control"  placeholder="{{'enter_name' | translate}}" name="username" required readonly>
                 </div>
                 <br>
                 <label for="permissions">
-                    Permissions
+                    <span ng-bind="'permissions' | translate"></span>
                 </label>
                 <div>
-                    <input ng-model="tempUser.permissions" type="text" class="form-control" id="permissions" placeholder="Enter permissions" name="permissions" required>
+                    <input ng-model="tempUser.permissions" type="text" class="form-control" id="permissions" placeholder="{{'enter_perm' | translate}}" name="permissions" required>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button ng-if="!tempUser.edit" type="button" class="btn btn-default" data-dismiss="modal" ng-click="addUser()">Add</button>
-                <button ng-if="tempUser.edit" type="button" class="btn btn-default" data-dismiss="modal" ng-click="editUser()">Edit</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span ng-bind="'close' | translate"></span></button>
+                <button ng-if="!tempUser.edit" type="button" class="btn btn-default" data-dismiss="modal" ng-click="addUser()"><span ng-bind="'add' | translate"></span></button>
+                <button ng-if="tempUser.edit" type="button" class="btn btn-default" data-dismiss="modal" ng-click="editUser()"><span ng-bind="'edit' | translate"></span></button>
             </div>
         </div>
 

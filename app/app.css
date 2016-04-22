@@ -1,4 +1,13 @@
 /* app css stylesheet */
+.lang-btn{
+    width: 70px;
+    height: 55px;
+}
+
+.lang-buttons{
+    margin-top: 55px;
+    text-align: center
+}
 
 .menu {
     list-style: none;

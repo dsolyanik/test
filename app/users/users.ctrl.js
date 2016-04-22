@@ -5,8 +5,12 @@
         .module('myApp.users')
         .controller('users.ctrl', Controller);
 
-    function Controller($scope, usersSvc, usersStoreSvc) {
+    function Controller($scope, usersSvc, usersStoreSvc, $translate) {
 
+        $scope.changeLanguage = function (langKey) {
+            $translate.use(langKey);
+        };
+        
         usersSvc.getUsers()
             .success(function (data) {
                 $scope.collection = data;

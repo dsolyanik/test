@@ -3,6 +3,6 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
     'ngRoute',
-    'myApp.users'
-]);
-    
+    'myApp.users',
+    'pascalprecht.translate']);
+
