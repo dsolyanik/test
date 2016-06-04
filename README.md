@@ -9,6 +9,8 @@ Do this steps for run app:
 5. go to http://localhost:8000/app/
 
 
+
+
 Some comments:
 
  Arrays format is : [{username:”david”,permissions:”admin”},{username:”meir”,permissions:”manager”}
